@@ -1,0 +1,19 @@
+{
+  "name": "json_delta",
+  "author": "Sergio Veiga <sergioveiga@gmail.com>",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:darkua/json_delta.git"
+  },
+  "dependencies": {
+    "rfr": "^1.2.3"
+  },
+  "bundledDependencies": [],
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}
