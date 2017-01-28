@@ -53,8 +53,8 @@ the changes based on a start/end date filter.
 ```
 
 * endpoint to register model changes, receives individual entry or an array of them
-  * add timestamp to entry for allow time filtering
-  * store json entries in a simple key/value structure, ordered by timestamp
+  - [ ] add timestamp to entry for allow time filtering
+  - [ ] store json entries in a simple key/value structure, ordered by timestamp
 
 ```
 // if no interval is passed filter all
@@ -62,14 +62,9 @@ the changes based on a start/end date filter.
 /diff/1 -d {"start":"2017-01-01", end:"2017-01-01"} //all changes for obj id 1, in between time interval
 ```
 * endpoint to filter changes receiving as paramenter start and end date
-  * get specific elements relative to the querie
-  * diff in between ordered elements by date
-  * output diff in correct format
-
-2. Babl module request details view
-  - [x] Track request full details from kafka `logs.qa` topic and write to `logs.details`
-  - [ ] Send babl events (Telegram/Slack notifications) when the request details is not completed within the expected time limit.
-
+  - [ ] get specific elements relative to the querie
+  - [ ] diff in between ordered elements by date
+  - [ ] output diff in correct format
 
 Assumptions:
 - Will use the field _id, to identify same objects for comparing
