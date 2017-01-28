@@ -52,9 +52,9 @@ the changes based on a start/end date filter.
 /add [{"id":1,"name":"bar"},{"id":2,"name":"foobar"}]
 ```
 
-[ ] - endpoint to register model changes, receives individual entry or an array of them
-  [ ] - add timestamp to entry for allow time filtering
-  [ ] - store json entries in a simple key/value structure, ordered by timestamp
+* - endpoint to register model changes, receives individual entry or an array of them
+  * - add timestamp to entry for allow time filtering
+  * - store json entries in a simple key/value structure, ordered by timestamp
 
 ```
 // if no interval is passed filter all
