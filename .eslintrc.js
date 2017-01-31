@@ -11,7 +11,7 @@ module.exports = {
         "arrow-body-style": "error",
         "arrow-parens": "error",
         "arrow-spacing": "error",
-        "block-scoped-var": "error",
+        "block-scoped-var": "off",
         "block-spacing": "off",
         "brace-style":  ["error", "1tbs", { "allowSingleLine": true }],
         "callback-return": "error",
@@ -19,13 +19,7 @@ module.exports = {
         "capitalized-comments": "error",
         "class-methods-use-this": "error",
         "comma-dangle": "error",
-        "comma-spacing": [
-            "error",
-            {
-                "after": false,
-                "before": false
-            }
-        ],
+        "comma-spacing": "off",
         "comma-style": [
             "error",
             "last"
@@ -74,7 +68,7 @@ module.exports = {
         "max-lines": "error",
         "max-nested-callbacks": "error",
         "max-params": "error",
-        "max-statements": "error",
+        "max-statements": "off",
         "max-statements-per-line": "off",
         "multiline-ternary": [
             "error",
@@ -86,6 +80,7 @@ module.exports = {
         "newline-before-return": "off",
         "newline-per-chained-call": "error",
         "no-alert": "error",
+        "no-redeclare" : "off",
         "no-array-constructor": "error",
         "no-await-in-loop": "error",
         "no-bitwise": "error",
@@ -136,12 +131,7 @@ module.exports = {
         "no-new-require": "error",
         "no-new-wrappers": "error",
         "no-octal-escape": "error",
-        "no-param-reassign": [
-            "error",
-            {
-                "props": false
-            }
-        ],
+        "no-param-reassign": "off",
         "no-path-concat": "error",
         "no-plusplus": [
             "error",
@@ -152,7 +142,7 @@ module.exports = {
         "no-process-env": "error",
         "no-process-exit": "error",
         "no-proto": "error",
-        "no-prototype-builtins": "error",
+        "no-prototype-builtins": "off",
         "no-restricted-globals": "error",
         "no-restricted-imports": "error",
         "no-restricted-modules": "error",
@@ -184,7 +174,7 @@ module.exports = {
         "no-unmodified-loop-condition": "error",
         "no-unneeded-ternary": "error",
         "no-unused-expressions": "error",
-        "no-use-before-define": "error",
+        "no-use-before-define": "off",
         "no-useless-call": "error",
         "no-useless-computed-key": "error",
         "no-useless-concat": "error",
@@ -211,10 +201,10 @@ module.exports = {
         "prefer-destructuring": "off",
         "prefer-numeric-literals": "error",
         "prefer-promise-reject-errors": "error",
-        "prefer-reflect": "error",
+        "prefer-reflect": "off",
         "prefer-rest-params": "error",
         "prefer-spread": "error",
-        "prefer-template": "error",
+        "prefer-template": "off",
         "quote-props": "off",
         "quotes": "off",
         "radix": "error",

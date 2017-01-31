@@ -71,12 +71,22 @@ Assumptions:
 - Will user the field _timestamp, to identify object change, if not present will add to object
 - stateless service, no cache, no data persistence
 
-
-#questions:
-
-As a a normal project, i would investigate and choose the best json diff lib available in order to take in consideration all possible cases, but since this is a code challange, you prefer me to me make a simple recursive transversal function that checks for, updates on values only (including nested objects and arrays), assuming that model does not change meaning no new/deleted keys?
-
 * todo
   - [] using a for loop to add multiple items in array creates entries with same timestamp, since js only has resolution to miliseconds, one solution could be add process.hrtime() with micro resolution as padding
 
 
+### Running locally
+```
+npm install
+npm test 
+npm start
+```
+
+or using docker
+```
+docker pull darkua/json-delta
+```
+
+Go into scripts dir and you can run ./add.sh to register data, and you cand diff the data running ./diff.sh
+I add benchmarck script to add a large json file, and diff the contents
+```timer ./benchmark.sh```

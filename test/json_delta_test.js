@@ -85,5 +85,4 @@ describe('Add',function() {
     var actual = jsonDelta.filter(undefined,starDate,endDate);
     assert.equal(0,actual[_id].length);
   });
-
 });

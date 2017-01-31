@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
-    "eslint": "./node_modules/.bin/eslint .",
+    "eslint": "./node_modules/.bin/eslint ./lib",
     "start": "node ./lib/server.js"
   },
   "repository": {
