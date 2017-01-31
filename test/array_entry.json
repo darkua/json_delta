@@ -3,17 +3,20 @@
     "name": "Bruce Willis",
     "address": {
         "street": "Nakatomi Plaza"
-    }
+    },
+    "_timestamp":1483228800000
 }, {
     "_id": 1,
     "name": "Bruce Quase Willis",
     "address": {
         "street": "Nakatomi Plaza"
-    }
+    },
+    "_timestamp":1483315200000
 }, {
     "_id": 1,
     "name": "Bruce Mais do que Willis",
     "address": {
         "street": "Natouaqui Plaza"
-    }
+    },
+    "_timestamp":1483401600000
 }]

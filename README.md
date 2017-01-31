@@ -53,24 +53,30 @@ the changes based on a start/end date filter.
 ```
 
 * endpoint to register model changes, receives individual entry or an array of them
-  - [ ] add timestamp to entry for allow time filtering
-  - [ ] store json entries in a simple key/value structure, ordered by timestamp
+  - [x] add timestamp to entry for allow time filtering
+  - [x] store json entries in a simple key/value structure, ordered by timestamp
 
 ```
 // if no interval is passed filter all
 /diff -d {"start":"2017-01-01", end:"2017-01-01"} // all changes from all objects that occurend in between timeinterval
-/diff/1 -d {"start":"2017-01-01", end:"2017-01-01"} //all changes for obj id 1, in between time interval
+/diff -d {"_id":1,start":"2017-01-01", end:"2017-01-01"} //all changes for obj id 1, in between time interval
 ```
 * endpoint to filter changes receiving as paramenter start and end date
-  - [ ] get specific elements relative to the querie
+  - [ ] get specific elements relative to the time query
   - [ ] diff in between ordered elements by date
   - [ ] output diff in correct format
 
 Assumptions:
 - Will use the field _id, to identify same objects for comparing
+- Will user the field _timestamp, to identify object change, if not present will add to object
 - stateless service, no cache, no data persistence
 
 
 #questions:
 
 As a a normal project, i would investigate and choose the best json diff lib available in order to take in consideration all possible cases, but since this is a code challange, you prefer me to me make a simple recursive transversal function that checks for, updates on values only (including nested objects and arrays), assuming that model does not change meaning no new/deleted keys?
+
+* todo
+  - [] using a for loop to add multiple items in array creates entries with same timestamp, since js only has resolution to miliseconds, one solution could be add process.hrtime() with micro resolution as padding
+
+

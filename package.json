@@ -3,17 +3,26 @@
   "author": "Sergio Veiga <sergioveiga@gmail.com>",
   "version": "0.0.1",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "eslint": "./node_modules/.bin/eslint .",
+    "start": "node ./lib/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:darkua/json_delta.git"
   },
   "dependencies": {
-    "rfr": "^1.2.3"
+    "httpdispatcher": "^2.0.1",
+    "npm": "^4.1.2",
+    "rfr": "^1.2.3",
+    "underscore": "^1.8.3"
   },
   "bundledDependencies": [],
   "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
     "mocha": "^3.2.0"
   }
 }
